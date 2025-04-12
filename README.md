@@ -16,7 +16,7 @@ Our web application leverages machine learning to provide personalized placement
 2. **Salary Prediction**: Estimates expected salary for students predicted to be placed
 3. **Company Type Recommendation**: Suggests suitable company categories based on predicted salary ranges
 
-### Current Progress (Mid-Evaluation)
+### Current Progress 
 
 #### Completed Tasks
 - Data collection and preprocessing pipeline
