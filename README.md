@@ -27,8 +27,6 @@ Our web application leverages machine learning to provide personalized placement
 
 #### In Progress
 - Frontend UI enhancement
-- Model performance optimization
-- User authentication system
 - Data visualization components
 - Documentation and testing
 
