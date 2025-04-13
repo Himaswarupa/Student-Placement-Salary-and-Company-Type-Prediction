@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Prediction App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <h1>Placement Prediction Portal</h1>
+        <nav>
+            <a href="{{ url_for('home') }}" class="active">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </nav>
+    </header>
+
+    <main class="home-content">
+        <div class="blur-container">
+            <h2>Welcome to Placement Prediction Portal</h2>
+            <p class="intro-text">
+                Our advanced machine learning system helps students predict their placement outcomes
+                based on their academic performance and skills. Get insights into your potential
+                career path and prepare better for your future.
+            </p>
+            <a href="{{ url_for('predict_form') }}" class="predict-button">Predict Placement</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Placement Prediction Portal </p>
+    </footer>
+</body>
+</html>
