@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Prediction - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Placement Prediction Portal</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </nav>
+    </header>
 
+    <main class="result-container">
+        <h2>Placement Prediction Results</h2>
+        
+        {% if error %}
+            <div class="error-message">
+                <p>Oops! Something went wrong: {{ error }}</p>
+            </div>
+        {% else %}
+            <div class="result-card">
+                <h3>Candidate: {{ name }}</h3>
+                <p>Program: {{ course }}</p>
+
+                {% if placed %}
+                    <p><strong>Congratulations!</strong> You have secured a placement! 🎉</p>
+                    <p><strong>Estimated Salary:</strong> ₹{{ salary }}</p>
+                    <p><strong>Hiring Company Type:</strong> {{ company_type }}</p>
+                {% else %}
+                    <p>Unfortunately, you have not been placed this time. Keep learning and improving!</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Placement Prediction Portal </p>
+    </footer>
+</body>
+</html>
