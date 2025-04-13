@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Placement Prediction App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Placement Prediction App</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}" class="active">About</a>
+        </nav>
+    </header>
 
+    <main class="about-content">
+        <h2>About Student Placement Prediction</h2>
+        <div class="about-text">
+            <p>
+                The Student Placement Prediction System is an innovative tool designed to help
+                students understand their placement prospects based on their academic performance
+                and skills. Using advanced machine learning algorithms, our system analyzes various
+                factors that influence placement outcomes.
+            </p>
+            
+            <h3>How It Helps Students</h3>
+            <ul>
+                <li>Provides early insights into placement possibilities</li>
+                <li>Helps identify areas for improvement</li>
+                <li>Offers salary predictions for better career planning</li>
+                <li>Suggests potential company types based on profile</li>
+                <li>Enables better preparation for placement season</li>
+            </ul>
+
+            <p>
+                Our system considers multiple factors including CGPA, technical skills, projects,
+                internships, and communication skills to provide accurate predictions. This helps
+                students focus their efforts on areas that need improvement and make informed
+                decisions about their career preparation.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Placement Prediction App </p>
+    </footer>
+</body>
+</html>
